@@ -16,11 +16,9 @@ Questions.init(
       allowNull: false
     },
     choices: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-            isInteger: true
-        }
+  
     },
     quiz_id: {
         type: DataTypes.INTEGER,

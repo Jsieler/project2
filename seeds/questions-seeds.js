@@ -79,6 +79,6 @@ const questionsData = [
   
 ];
 
-const seedQuestions = () => Product.bulkCreate(questionsData);
+const seedQuestions = () => Questions.bulkCreate(questionsData);
 
 module.exports = seedQuestions;
