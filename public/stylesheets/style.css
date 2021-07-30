@@ -1,1 +1,18 @@
-test.123
+:root {
+    --gry-primary-color: #AE0001;
+    --gry-secondary-color: #EEBA30;
+    /* gryphon ^^^^ */
+    --sly-primary-color: #2A623D;
+    --sly-secondary-color: #AAAAAA;
+    /* snake ^^^^ */
+    --rav-primary-color: #222F5B;
+    --rav-secondary-color: #5d5d5d;
+    /* raven  ^^^^ */ 
+    --huf-primary-color: #FFDB00;
+    --huf-secondary-color: #60605C;
+    /* badger ^^^^ */
+}
+
+body {
+    background-color: var(--sly-primary-color);
+}
