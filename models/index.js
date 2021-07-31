@@ -9,5 +9,8 @@ Questions.belongsTo(Quiz, {
     onDelete: 'SET NULL'
   });
 
+  Quiz.hasMany(Questions, {
+    foreignKey: 'quiz_id'
+  });
 
 module.exports = { User, Quiz, Questions };
