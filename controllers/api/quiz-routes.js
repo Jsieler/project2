@@ -20,20 +20,19 @@ router.get('/', (req, res) => {
       },
     ]
   })
-  .then(data => res.json(data))
-
-    // .then(data => {
-    //   const quiz = data.map((row) => ({ id: row.id, question: row.question, choices: [row.choice1, row.choice2, row.choice3, row.choice4] }))
-    //   res.render('dashboard', {
-    //     quiz,
-    //   });
-    // })
-
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+  .then(data => {
+    const quiz = data.map(quiz => quiz.get({ plain: true }));
+    res.render('dashboard', { quiz, loggedIn: true });
+    console.log(quiz)
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
+
+  // .then(data => res.json(data))
+
 
 
 
