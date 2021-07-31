@@ -22,7 +22,8 @@ router.get('/', (req, res) => {
   })
   .then(data => {
     const quiz = data.map(quiz => quiz.get({ plain: true }));
-    res.render('dashboard', { quiz, loggedIn: true });
+    res.json(data)
+    // res.render('dashboard', { quiz, loggedIn: true });
     console.log(quiz)
   })
   .catch(err => {
@@ -30,11 +31,6 @@ router.get('/', (req, res) => {
     res.status(500).json(err);
   });
 });
-
-  // .then(data => res.json(data))
-
-
-
 
 
 
