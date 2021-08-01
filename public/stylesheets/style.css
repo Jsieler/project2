@@ -18,20 +18,54 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
-  text-align:center;
-}
-
 a {
-  text-decoration:none;
-  color: #1ab188;
-  transition:.5s ease;
+  display: none;
 }
 
-a:hover{
-    text-shadow: 2px 2px #1ab188;
+button {
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display:inline-block;
+  font-family: 'Cyber', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+
+.fakebtn {
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display:inline-block;
+  font-family: 'Cyber', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 20px 40px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+button:hover {
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+}
+
+.realbtn {
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display:inline-block;
+  font-family: 'Cyber', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 20px 40px;
+  text-align: center;
+  margin-left: 70px;
 }
 
 .form {
@@ -109,12 +143,6 @@ input, textarea {
   transition: all 0.15s;
 }
 
-button:hover {
-  text-shadow: 0 0 2em rgba(255, 255, 255, hotpink);
-  color: hotpink;
-  border-color: #FFFFFF;
-}
-
 .hide {
   display: none;
   visibility: none;
@@ -124,3 +152,38 @@ button:hover {
   display: none;
   visibility: none;
 }
+
+.hide3 {
+  display: none;
+  visibility: none;
+}
+
+.hide4 {
+  display: none;
+  visibility: none;
+}
+
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Cyber', sans-serif;
+  background: linear-gradient(to right, rgb(84, 74, 125), rgb(255, 212, 82));
+}
+
+/* html {
+  background: url(https://i.pinimg.com/originals/dc/ed/7b/dced7b0c2ab70354c2cb04a9064ef381.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+} */
