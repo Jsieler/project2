@@ -47,6 +47,32 @@ async function loginFormHandler(event) {
       }
     }
   }
+function myFunctionZ() {
+  var element = document.getElementById("fakey")
+  element.classList.remove("hide3");
+}
+
+function myFunctionX() {
+  var element = document.getElementById("xyz2");
+  element.classList.add("hide2")
+  var element = document.getElementById("xyz");
+  element.classList.remove("hide");
+  var element = document.getElementById("fakebtn1");
+  element.classList.add("hide");
+  var element = document.getElementById("fakebtn2");
+  element.classList.add("hide");
+}
+
+function myFunctionY() {
+  var element = document.getElementById("xyz");
+  element.classList.add("hide");
+  var element = document.getElementById("xyz2");
+  element.classList.remove("hide2");
+  var element = document.getElementById("fakebtn1");
+  element.classList.add("hide");
+  var element = document.getElementById("fakebtn2");
+  element.classList.add("hide");
+}
   
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
   
