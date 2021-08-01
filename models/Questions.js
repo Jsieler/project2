@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Questions extends Model {}
+class Questions extends Model { }
 
 Questions.init(
   {
@@ -15,23 +15,35 @@ Questions.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    choices: {
-        type: DataTypes.STRING,
-        allowNull: false,
-  
+    choices1: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
+    choices2: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    choices3: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    choices4: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+
     quiz_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model:'quiz',
-          key:'id'
-        }
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'quiz',
+        key: 'id'
       }
-    
-    
+    }
+
+
   },
 
-  
+
   {
     sequelize,
     timestamps: false,
