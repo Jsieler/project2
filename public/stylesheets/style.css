@@ -1,0 +1,126 @@
+:root {
+    --gry-primary-color: #AE0001;
+    --gry-secondary-color: #EEBA30;
+    /* gryphon ^^^^ */
+    --sly-primary-color: #2A623D;
+    --sly-secondary-color: #AAAAAA;
+    /* snake ^^^^ */
+    --rav-primary-color: #222F5B;
+    --rav-secondary-color: #5d5d5d;
+    /* raven  ^^^^ */ 
+    --huf-primary-color: #FFDB00;
+    --huf-secondary-color: #60605C;
+    /* badger ^^^^ */
+    /* this */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+  text-align:center;
+}
+
+a {
+  text-decoration:none;
+  color: #1ab188;
+  transition:.5s ease;
+}
+
+a:hover{
+    text-shadow: 2px 2px #1ab188;
+}
+
+.form {
+  background:rgba(#13232f,.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow:0 4px 10px 4px rgba(#13232f,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}
+li a {
+  display:block;
+  text-decoration:none;
+  padding:15px;
+  font-size:20px;
+  float:left;
+  width:50%;
+  text-align:center;
+  cursor:pointer;
+  transition:.5s ease;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba(#ffffff,.5);
+  transition:all 0.25s ease;
+  pointer-events: none;
+  font-size:22px;
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid var(--rav-primary-color);
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.button {
+  display:inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+button:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, hotpink);
+  color: hotpink;
+  border-color: #FFFFFF;
+}
+
+.hide {
+  display: none;
+  visibility: none;
+}
+
+.hide2 {
+  display: none;
+  visibility: none;
+}
