@@ -1,0 +1,204 @@
+.hero-content {
+  position: relative;
+  font-family: 'Cyber' sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+
+:root {
+    --gry-primary-color: #AE0001;
+    --gry-secondary-color: #EEBA30;
+    /* gryphon ^^^^ */
+    --sly-primary-color: #2A623D;
+    --sly-secondary-color: #AAAAAA;
+    /* snake ^^^^ */
+    --rav-primary-color: #222F5B;
+    --rav-secondary-color: #5d5d5d;
+    /* raven  ^^^^ */ 
+    --huf-primary-color: #FFDB00;
+    --huf-secondary-color: #60605C;
+    /* badger ^^^^ */
+    /* this */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Cyber', sans-serif;
+  /* background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% ); */
+  background: rgb(240,241,39); 
+  background: radial-gradient(circle, rgba(240,241,39,1) 0%, rgba(237,51,95,1) 100%, rgba(237,51,95,1) 100%); 
+  /* background: linear-gradient(to right, rgb(188, 78, 156), rgb(248, 7, 89)); */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display:inline-block;
+  font-family: 'Cyber', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+
+.fakebtn {
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display:inline-block;
+  font-family: 'Cyber', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 20px 40px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+button:hover {
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+}
+
+.realbtn {
+  border: none;
+  background-color: #222;
+  color: #fff;
+  display:inline-block;
+  font-family: 'Cyber', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 20px 40px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.form {
+  background:rgba(#13232f,.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow:0 4px 10px 4px rgba(#13232f,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}
+li a {
+  display:block;
+  text-decoration:none;
+  padding:15px;
+  font-size:20px;
+  float:left;
+  width:50%;
+  text-align:center;
+  cursor:pointer;
+  transition:.5s ease;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba(#ffffff,.5);
+  transition:all 0.25s ease;
+  pointer-events: none;
+  font-size:22px;
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid var(--rav-primary-color);
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.button {
+  display:inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.hide {
+  display: none;
+  visibility: none;
+}
+
+.hide2 {
+  display: none;
+  visibility: none;
+}
+
+.hide3 {
+  display: none;
+  visibility: none;
+}
+
+.hide4 {
+  display: none;
+  visibility: none;
+}
+
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
