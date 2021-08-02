@@ -1,3 +1,24 @@
+.hero-content {
+  position: relative;
+  font-family: 'Cyber' sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+
 :root {
     --gry-primary-color: #AE0001;
     --gry-secondary-color: #EEBA30;
@@ -12,6 +33,19 @@
     --huf-secondary-color: #60605C;
     /* badger ^^^^ */
     /* this */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Cyber', sans-serif;
+  /* background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% ); */
+  background: rgb(240,241,39); 
+  background: radial-gradient(circle, rgba(240,241,39,1) 0%, rgba(237,51,95,1) 100%, rgba(237,51,95,1) 100%); 
+  /* background: linear-gradient(to right, rgb(188, 78, 156), rgb(248, 7, 89)); */
 }
 
 *, *:before, *:after {
@@ -168,22 +202,3 @@ input, textarea {
   src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
   font-display: swap;
 }
-
-body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  font-family: 'Cyber', sans-serif;
-  background: linear-gradient(to right, rgb(84, 74, 125), rgb(255, 212, 82));
-}
-
-/* html {
-  background: url(https://i.pinimg.com/originals/dc/ed/7b/dced7b0c2ab70354c2cb04a9064ef381.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-} */
