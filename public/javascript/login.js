@@ -47,10 +47,10 @@ async function loginFormHandler(event) {
       }
     }
   }
-function myFunctionZ() {
-  var element = document.getElementById("fakey")
-  element.classList.remove("hide3");
-}
+// function myFunctionZ() {
+//   var element = document.getElementById("fakey")
+//   element.classList.remove("hide3");
+// }
 
 function myFunctionX() {
   var element = document.getElementById("xyz2");
