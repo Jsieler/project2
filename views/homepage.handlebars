@@ -1,1 +1,95 @@
-<h1>HomePage</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .veil {
+    width: 0;
+    height: 0;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid #000;
+    border-left: 80px solid transparent;
+    position: relative;
+  }
+  
+  .veil:after {
+    width: 0;
+    height: 0;
+    border-right: 90px solid transparent;
+    border-bottom: 160px solid #fff;
+    border-left: 90px solid transparent;
+    position: absolute;
+    top: -13.5px;
+    left: -90px;
+    z-index: -1;
+    content: "";
+  }
+  
+  .stone {
+    width: 95px;
+    height: 95px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    left: -48px;
+    bottom: -46px;
+    transition: left 1s;
+  }
+  
+  .veil:hover > .stone {
+    left: -200px;
+  }
+  
+  .wand {
+    width: 5px;
+    height: 145px;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    left: -2.5px;
+    transition: left 1s;
+  }
+  
+  .veil:hover > .wand  {
+    left: 110px;
+  }
+
+.delay {
+    transition-delay: 5s;
+}
+    </style>
+    <meta charset="utf-8" />
+    <title>App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="deathly.css" />
+</head>
+<body>
+    {{!-- <h1 style="color:#fff;">Continue if you want to find your destiny!</h1> --}}
+    
+        <div class="veil">
+        <div class="stone"></div>
+        <div class="wand"></div>
+        </div>
+    
+</body>
+<script>
+
+    let show = window.setTimeout(function() {
+    window.location.href = 'views/login';
+},  4000);
+
+
+</script>
+</html>
