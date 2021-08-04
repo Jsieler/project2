@@ -1,14 +1,115 @@
 {{!-- <section class="hero"> --}}
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <style>
+      body {
+        background-image: url("https://pavbca.com/walldb/original/2/6/7/247242.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+      }
+      @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-  <div class="hero-content">
+@keyframes fadeOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  15%, 85% {
+    opacity: 0; 
+  }
+}
+
+#dumbledore, {
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  margin: auto;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.quote, .fakebtn{
+  color:whitesmoke; 
+  font-family: 'Harry Potter', sans-serif;
+  opacity: 0;
+  animation: fadeIn 3s; 
+  animation-fill-mode: forwards; 
+  }
+  
+  .quote {
+    font-size: 6rem;
+  }
+
+  #part1 {
+    padding-top: 2em;
+    padding-left: 3em;
+    margin: 0 0 .4em 0;
+  }
+
+  #part2 {
+    padding-left: 4em;
+    margin: 0 0 .4em 0;
+  }
+
+  #part3 {
+    padding-left: 4.5em;
+    margin: 0 0 0 0;
+    
+  }
+#part2.quote {
+  animation-delay: 2s; 
+}
+
+.fakebtn {
+border-radius: 15px;
+}
+
+#part3.quote {
+  animation-delay: 3s; 
+}
+
+#fakebtn1 {
+  animation-delay: 4s;
+  margin-left: 19em;
+  margin-top: 1em;
+}
+
+#fakebtn2 {
+  animation-delay: 4s;
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;} /* End https://www.cursors-4u.com */
+    </style>
+  </head>
+  <body>
+    
+  <div id="dumbledore">
+    <p class="quote" id="part1">Which Hogwarts  </p>
+    <p class="quote" id="part2">house do you </p>
+    <p class="quote" id="part3">belong in?</p>
+  </div>
+
+     <div class="hero-content">
 
     <h1 class="hero-title">
-      JOE ROGAN IS LITEARLLY 5'2
+      
     </h1>
 
-    <h2 class="hero-subtitle">
-      hallo world
-    </h2>
 
     <button id="fakebtn1" class="fakebtn" onclick="myFunctionX();">LOGIN</button>
     <button id="fakebtn2" class="fakebtn" onclick="myFunctionY();">SIGNUP</button>
@@ -53,3 +154,8 @@
 </form>
 </div>
 <script src="/javascript/login.js"></script>
+
+  </body>
+  </html>
+
+ 
