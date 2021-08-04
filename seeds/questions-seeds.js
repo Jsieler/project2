@@ -130,26 +130,7 @@ const questionsData = [
   },
 
 ];
-var questionIndex = -1
-function nextQuestion() {
-  document.body.innerHTML = '';
-    ++questionIndex;
-      document.write(questionsData[questionIndex].question + "<br />");
-  
-          for (var j=0; j < questionsData[questionIndex].choices.length; j++) {
-          document.write("<input type=radio id=myRadio name=radAnswer>" + questionsData[questionIndex].choices[j] + "<br />");
-          }
-          
-     if (questionIndex < (questionsData.length - 1)) {
-      var nextButton = document.createElement("input");
-      nextButton.type = "button";
-      nextButton.value = "Next question";
-      nextButton.addEventListener('click', nextQuestion);
-      document.body.appendChild(nextButton);
-     }
-  };
-  
-  nextQuestion();
+
 
 
 
