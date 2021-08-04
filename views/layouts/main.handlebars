@@ -17,8 +17,11 @@
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        <button onclick="window.location.href='/dashboard'">dashboard</button>
         <button id="logout" class="btn-no-style">logout</button>
+        <button onclick="window.location.href='/api/spells'">spells</button>
+        <button onclick="window.location.href='/api/wizards'">wizards</button>
+        <button onclick="window.location.href='/api/quiz'">quiz</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
