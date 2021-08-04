@@ -75,5 +75,22 @@
         and Wizardry. Godric is most well known for his legendary swordsmanship, he was so skillful that he 
         preferred to duel muggles with his sword instead of his magic, despite magic being a far more decisive and powerful weapon.
     </p>
+    <script>
+        function randomHouse() {
+            var myrandom=Math.round(Math.random() * 3)
+            var link1="gryffindor.html"
+            var link2="ravenclaw.html"
+            var link3="hufflepuff.html"
+            var link4="slytherin.html"
+            if (myrandom == 0)
+            window.location=link1
+            else if (myrandom == 1)
+            window.location=link2
+            else if (myrandom == 2)
+            window.location=link3
+            else if (myrandom == 3)
+            window.location=link4
+        }
+    </script>
 </body>
 </html>
