@@ -1,31 +1,11 @@
 
 
 
-:root {
-    --gry-primary-color: #AE0001;
-    --gry-secondary-color: #EEBA30;
-    /* gryphon ^^^^ */
-    --sly-primary-color: #2A623D;
-    --sly-secondary-color: #AAAAAA;
-    /* snake ^^^^ */
-    --rav-primary-color: #222F5B;
-    --rav-secondary-color: #5d5d5d;
-    /* raven  ^^^^ */ 
-    --huf-primary-color: #FFDB00;
-    --huf-secondary-color: #60605C;
-    /* badger ^^^^ */
-    /* this */
-}
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
 
-/* body {
-  display: flex-start;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 10vh;
-  font-family: 'Cyber', sans-serif;
-   
-} */
+
+
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -35,28 +15,17 @@ a {
   display: none;
 }
 
-button {
-  border: none;
-  background-color: #222;
-  color: #fff;
-  display:inline-block;
-  font-family: 'Cyber', sans-serif;
-  font-size: 14px;
-  font-weight: 100;
-  text-decoration: none;
-  padding: 20px 40px;
-}
+
 
 .fakebtn {
   border: none;
   background-color: #222;
   color: #fff;
   display:inline-block;
-  
   font-size: 25px;
   font-weight: 100;
   text-decoration: none;
- padding: 15px 15px 5px 10px;
+ padding: 15px 15px 5px;
   text-align: center;
   margin-left: 70px;
 }
@@ -72,7 +41,6 @@ button:hover {
   background-color: #222;
   color: #fff;
   display:inline-block;
-  font-family: 'Cyber', sans-serif;
   font-size: 25px;
   font-weight: 100;
   text-decoration: none;
@@ -139,23 +107,6 @@ input, textarea {
   margin-bottom:40px;
 }
 
-.button {
-  display:inline-block;
-  padding: 0.46em 1.6em;
-  border: 0.1em solid #000000;
-  margin: 0 0.2em 0.2em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #000000;
-  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-  background-color: #FFFFFF;
-  text-align: center;
-  transition: all 0.15s;
-}
-
 .hide {
   display: none;
   visibility: none;
@@ -174,10 +125,4 @@ input, textarea {
 .hide4 {
   display: none;
   visibility: none;
-}
-
-@font-face {
-  font-family: Cyber;
-  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
-  font-display: swap;
 }
