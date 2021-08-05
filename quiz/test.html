@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+
+    <!-- gryffindor = 1  -->
+    <!-- Hufflepuff = 2  -->
+    <!-- Ravenclaw = 3  -->
+    <!-- Slytherin = 4  -->
+
+    <h3 class="question" id="question1">You've made it to Hogwarts, which means you've already brought a wand from Ollivander's, What material is at its core?</h3>
+    <form id="choices1">
+        <label for="que1cho1">Phoenix Feather</label>
+        <input type="radio" name="one" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Unicorn Hair</label>
+        <input type="radio" name="one" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Dragon Heartstring</label>
+        <input type="radio" name="one" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Arachnid Fang</label>
+        <input type="radio" name="one" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question2">Choose a Deathly Hallow</h3>
+    <form id="choices2">
+        <label for="que1cho1">The Cloak of Invisibility</label>
+        <input type="radio" name="two" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">The Resurrection Stone</label>
+        <input type="radio" name="two" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">None</label>
+        <input type="radio" name="two" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">The Elder Wand</label>
+        <input type="radio" name="two" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question3">Which path do you intend to follow after leaving Hogwarts?</h3>
+    <form id="choices3">
+        <label for="que1cho1">I'd settle down and start a family as soon as possible!</label>
+        <input type="radio" name="three" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">I think I'd travel for a while before committing to a carrer.</label>
+        <input type="radio" name="three" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">I'd join the Ministry - I want to make a difference in the world</label>
+        <input type="radio" name="three" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">I'd continue to work hard in order to achieve as much success as possible.</label>
+        <input type="radio" name="three" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question4">What would you see in the Mirror of Erised?</h3>
+    <form id="choices4">
+        <label for="que1cho1">Myself, surrounded by loving family and friends</label>
+        <input type="radio" name="four" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Myself, experiencing a marvellous adventure</label>
+        <input type="radio" name="four" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Myself, knowledgable above all</label>
+        <input type="radio" name="four" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Myself, surrounded by riches</label>
+        <input type="radio" name="four" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question5">It's Saturday, you've finished your homework, and you have some free time. You decide to spend some time away from you common room. Where do you go?</h3>
+    <form id="choices5">
+        <label for="que1cho1">The Room of Requirements</label>
+        <input type="radio" name="five" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">The kitchens</label>
+        <input type="radio" name="five" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">The library</label>
+        <input type="radio" name="five" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">The Forbidden Forest</label>
+        <input type="radio" name="five" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question6">You're allowed a pet at Hogwarts, an owl, a cat, or a toad. Which do you bring?</h3>
+    <form id="choices6">
+        <label for="que1cho1">Owl</label>
+        <input type="radio" name="six" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Toad</label>
+        <input type="radio" name="six" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Cat</label>
+        <input type="radio" name="six" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Nothing, I cant be trusted to look after a pet!</label>
+        <input type="radio" name="six" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question7">The first Quidditch match of the season is approaching, and you can't wait to get involved. What role are you playing?</h3>
+    <form id="choices7">
+        <label for="que1cho1">Seeker. Iwant the glory!</label>
+        <input type="radio" name="seven" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Ill be in the crowd, making sure supporter morale is high!</label>
+        <input type="radio" name="seven" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Chaser. I like to be involved, and work as part of the team</label>
+        <input type="radio" name="seven" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Beater. I like having all that power</label>
+        <input type="radio" name="seven" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question8">Which of your skills are you most proud of?</h3>
+    <form id="choices8">
+        <label for="que1cho1">My ability to keep secrets</label>
+        <input type="radio" name="eight" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">My ability to make new friends</label>
+        <input type="radio" name="eight" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">My ability to absorb new information</label>
+        <input type="radio" name="eight" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">My ability to get what I want</label>
+        <input type="radio" name="eight" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question9">Which of the following would you most like to study?</h3>
+    <form id="choices9">
+        <label for="que1cho1">Centaurs</label>
+        <input type="radio" name="nine" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Ghosts</label>
+        <input type="radio" name="nine" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Werewolves</label>
+        <input type="radio" name="nine" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Goblins</label>
+        <input type="radio" name="nine" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question10">Given the choice, would you rather invent a potion that would gurantee you</h3>
+    <form id="choices10">
+        <label for="que1cho1">Glory</label>
+        <input type="radio" name="ten" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Love</label>
+        <input type="radio" name="ten" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Wisdom</label>
+        <input type="radio" name="ten" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Power</label>
+        <input type="radio" name="ten" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question11">Once every century, the Flutterby bush produces flowers that adapt their scent to attract</h3>
+    <form id="choices11">
+        <label for="que1cho1">Home</label>
+        <input type="radio" name="eleven" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Fresh parchment</label>
+        <input type="radio" name="eleven" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">The sea</label>
+        <input type="radio" name="eleven" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">A crackling log fire</label>
+        <input type="radio" name="eleven" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question12">Which quality do you value most?</h3>
+    <form id="choices12">
+        <label for="que1cho1">Courage</label>
+        <input type="radio" name="twelve" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Patience</label>
+        <input type="radio" name="twelve" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Intelligence</label>
+        <input type="radio" name="twelve" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Ambition</label>
+        <input type="radio" name="twelve" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question13">What is your favorite color?</h3>
+    <form id="choices13">
+        <label for="que1cho1">Red</label>
+        <input type="radio" name="thirteen" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Yellow</label>
+        <input type="radio" name="thirteen" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Blue</label>
+        <input type="radio" name="thirteen" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Green</label>
+        <input type="radio" name="thirteen" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question14">What spell would you cast?</h3>
+    <form id="choices14">
+        <label for="que1cho1">Protego</label>
+        <input type="radio" name="fourteen" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Riddikulus</label>
+        <input type="radio" name="fourteen" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Absorbos librus</label>
+        <input type="radio" name="fourteen" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Crucio</label>
+        <input type="radio" name="fourteen" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<h3 class="question" id="question15">What is your patronus?</h3>
+    <form id="choices15">
+        <label for="que1cho1">Phoneix</label>
+        <input type="radio" name="fifteen" value="1" onclick="increment1();"/>
+        <br>
+        <label for="que1cho2">Otter</label>
+        <input type="radio" name="fifteen" value="2" onclick="increment2();"/>
+        <br>
+        <label for="que1cho3">Stag</label>
+        <input type="radio" name="fifteen" value="3" onclick="increment3();"/>
+        <br>
+        <label for="que1cho4">Snake</label>
+        <input type="radio" name="fifteen" value="4" onclick="increment4();"/>
+        <br>
+    </form>
+<button id="results" onclick="yes();">See results</button>
+</body>
+
+<script src="test.js"></script>
+</html>
