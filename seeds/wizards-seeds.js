@@ -39,7 +39,7 @@ const wizardsData = [
   {
     first_name: 'Newt',
     last_name: 'Scamander',
-    houses_id: 2
+    houses_id: 1
   },
   {
     first_name: 'Hermione',
