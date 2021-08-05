@@ -37,6 +37,10 @@ main {
 
 }
 
+input, textarea {
+  color: #fff;
+}
+
 .spell-card {
     background:#111e27 ;
     padding: 20px;
@@ -51,17 +55,31 @@ iframe, p{
 }
 </style>
 </head>
-<body>
-  <h1>Wizards and Witches<h1></h1>
-  <iframe src="https://giphy.com/embed/rvMQcARjST01W" width="580" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-hogwarts-deathly-hallows-rvMQcARjST01W%22%3E</a></p>
-  {{#each Wizards}}
-<main>
-    <div class="spell-card">
-        <div class="spell-cardinner">
-            <div class="spell-cardshape">
-            </div>
-            <div class="spell-card__name">
-                <h3>{{Wizards}}</h3>
+<section>
+  <h2>Create A Wizard or Witch</h2>
+<form class="create-wizard">
+
+  <label for="first_name"></label>
+  <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
+
+  <label for="last_name"></label>
+  <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br>
+
+   <label for="houses_id"></label>
+  <input type="text" id="houses_id" name="houses_id" placeholder="House ID TYPE:(1=Gryffindor, 2=Hufflepuff, 3=Ravenclaw, 4=Slytherin)"><br>
+
+
+  <button type="submit" class="btn">Create Wizard/Witch</button>
+</form> 
+</section>
+
+
+
+<h1>Wizards and Witches<h1>
+
+{{#each Wizards}}
+  
+  <h3>{{Wizards}}</h3>
   <ul>
       <li>
           {{first_name}}
@@ -70,13 +88,10 @@ iframe, p{
       House:
      {{house.house_name}}
   </ul>
-            </div>
-        </div>
-    </div>
-{{/each}}
-</body>
-</html>
 
+{{/each}}
+
+<script src="/javascript/create-wizard.js"></script>
 
 
 
