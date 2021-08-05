@@ -10,11 +10,14 @@
  body {
   font-family: 'Comfortaa', sans-serif;
     background: #111;
-    color: #FFFFFF;
+    color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
     text-align: center;
 }
 
+input, textarea {
+  color: #fff;
+}
 
 h1 {
   font-size: 60px;
@@ -51,22 +54,38 @@ iframe {
 }
 </style>
 </head>
-<body>
-  <h1>Harry Potter Spells</h1>
-  <iframe src="https://giphy.com/embed/xT5LMxGzbgJkUZjdte" width="480" height="208" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-magic-spells-xT5LMxGzbgJkUZjdte%22%3E</a></p>
-  {{#each spells}}
-<main>
-    <div class="spell-card">
-        <div class="spell-cardinner">
-            <div class="spell-cardshape">
-            </div>
-            <div class="spell-card__name">
-                <h2>{{spell_name}}:</h2>
-                <h3>Type of Spell:</h3>{{spell_type}}
-        <h3>Spell Affect:</h3>{{spell_affect}}
-            </div>
-        </div>
-    </div>
+
+<section>
+  <h2>Create A Spell</h2>
+<form class="create-spell">
+
+  <label for="spell_name"></label>
+  <input type="text" id="spell_name" name="spell_name" placeholder="Spell Name"><br>
+
+  <label for="spell_type"></label>
+  <input type="text" id="spell_type" name="spell_type" placeholder="Spell Type"><br>
+
+ <label for="spell_affect"></label>
+  <input type="text" id="spell_affect" name="spell_affect" placeholder="Spell Affect"><br>
+
+  <button type="submit" class="btn">Submit Spell</button>
+</form> 
+</section>
+
+<h1>List of Spells</h1>
+
+{{#each spells}}
+  
+  <h3>{{spells}}</h3>
+  <ul>
+      <li>
+          <h1>{{spell_name}}:</h1>
+          <h3>Type of Spell:</h3>{{spell_type}}
+          <h3>Spell Affect:</h3>{{spell_affect}},
+      </li>
+     
+  </ul>
+
 {{/each}}
-</body>
-</html>
+
+<script src="/javascript/add-spells.js"></script>
