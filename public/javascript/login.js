@@ -63,6 +63,8 @@ function myFunctionX() {
   element.classList.add("hide");
 }
 
+console.log("hi");
+
 function myFunctionY() {
   var element = document.getElementById("xyz");
   element.classList.add("hide");
@@ -77,4 +79,7 @@ function myFunctionY() {
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
   
   document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+
+
+  
   
