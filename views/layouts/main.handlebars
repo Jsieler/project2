@@ -12,36 +12,34 @@
   body {
     background-image: url("http://i.imgur.com/eVzOF6a.gif");
     background-repeat: no-repeat;
-    background-size:2500px;
+    background-size:2350px;
+    background-color:#111e27;
     } 
 
   .btnDass {
   background-color: #222;
   color: #fff;
   font-family: 'Harry Potter',sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   border-radius: 30px;
-  padding: 10px 10px 1px 10px;
+  padding: 2px 30px 2px 30px;
   margin-right: 1.5em;
-  margin-left: 1.2em;
-  margin-top: 8em;
-}
+  margin-left: 2.5em;
+  }
   .hide {
     display: none;
     visibility: none;
   }
-  .blob {
-    width:800px;
-    height: 800px;
-    color:purple
-  }
+  
+  
  /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;} /* End https://www.cursors-4u.com */
 </style>
 </head>
 <body>
   <div class="wrapper">
-    <header class="hide blob">
-      
+    <header>
+      <nav>
+        <ul>
         {{#if loggedIn}}
         <button class = "btnDass"onclick="window.location.href='/dashboard'">Dashboard</button>
         <button class ="btnDass" onclick="window.location.href='/api/quiz'">Quiz</button>
@@ -51,11 +49,12 @@
         {{else}}
         <a href="/login">login</a>
         {{/if}}
-      
+        </ul>
+      </nav>
     </header>
-    <main>
+     <main>
       {{{ body }}}
-    </main>
+    </main> 
   </div>
   
   {{#if loggedIn}}
