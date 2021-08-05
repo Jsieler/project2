@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Cyber' sans-serif;
+    }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/grfin.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+    }
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="gryf.css"> -->
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Gryffindor</h1>
+    <h3>Element: Fire</h3>
+    <button onclick="randomHouse();">Reject Destiny</button>
+  </div>
+</div>
+
+<h2>Traits</h2>
+    <p>
+        The Gryffindor house emphasises the traits of courage as well as daring, nerve, and chivalry. 
+        Gryffindor house members are seen as brave, although sometimes this is seen as a weakness. 
+        Some Gryffindors have also been noted to be short-tempered.
+    </p>
+
+<h2>Reputation</h2>   
+    <p>
+        Gryffindors and Slytherins have shared a fierce house rivalry since their founders.
+        Godric Gryffindor and Salazar Slytherin, had a severe falling out over Slytherin's emphasis on blood purity.
+        There might also be an element of feeling wronged, as Harry and his fellow Gryffindors tend to win in a lot of circumstances
+        which, when viewed from a neutral point of view, may be considered unfair.
+    </p>
+
+<h2>Founder</h2>
+    <p>
+        Godric Gryffindor was an English wizard and one of the four founders of Hogwarts School of Witchcraft
+        and Wizardry. Godric is most well known for his legendary swordsmanship, he was so skillful that he 
+        preferred to duel muggles with his sword instead of his magic, despite magic being a far more decisive and powerful weapon.
+    </p>
+    <script>
+        function randomHouse() {
+            var myrandom=Math.round(Math.random() * 3)
+            var link1="gryffindor.html"
+            var link2="ravenclaw.html"
+            var link3="hufflepuff.html"
+            var link4="slytherin.html"
+            if (myrandom == 0)
+            window.location=link1
+            else if (myrandom == 1)
+            window.location=link2
+            else if (myrandom == 2)
+            window.location=link3
+            else if (myrandom == 3)
+            window.location=link4
+        }
+    </script>
+</body>
+</html>

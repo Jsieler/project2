@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Cyber' sans-serif;
+    }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/huffo.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+    }
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="gryf.css"> -->
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Hufflepuff</h1>
+    <h3>Element: Earth</h3>
+    <p></p>
+    <button onclick="randomHouse();">Reject Destiny</button>
+  </div>
+</div>
+
+<h2>Traits</h2>
+    <p>
+        The Hufflepuff house is the most inclusive among the four houses; valuing hard work, dedication,
+        patience, loyalty, and fair play rather than a particular aptitude among its members. 
+    </p>
+
+<h2>Reputation</h2>   
+    <p>
+        Hufflepuff's nature and reputation can best be exemplified by its mascot, the badger. 
+        Though a quiet and largely unassuming creature that most percieve to be harmless, the
+        badger can be surprisingly vicious if provoked and capable of fighting off animals many times its size, 
+        especially if there is a threat to what it cares about.
+    </p>
+
+<h2>Founder</h2>
+    <p>
+        Helga Hufflepuff was a Welsh witch and was one of the four founders of Hogwarts School of
+        Witchcraft and Wizardry. Helga was renowned for her compassionate nature and charming ways.
+        She took in the house-elves in the Hogwarts kitchen, where they could work in peace and safety.
+    </p>
+    <script>
+        function randomHouse() {
+            var myrandom=Math.round(Math.random() * 3)
+            var link1="gryffindor.html"
+            var link2="ravenclaw.html"
+            var link3="hufflepuff.html"
+            var link4="slytherin.html"
+            if (myrandom == 0)
+            window.location=link1
+            else if (myrandom == 1)
+            window.location=link2
+            else if (myrandom == 2)
+            window.location=link3
+            else if (myrandom == 3)
+            window.location=link4
+        }
+    </script>
+</body>
+</html>
