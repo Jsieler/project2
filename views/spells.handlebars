@@ -1,6 +1,22 @@
-<h1>Popular Spells!</h1>
 
+<section>
+  <h2>Create A Spell</h2>
+<form class="create-spell">
 
+  <label for="spell_name"></label>
+  <input type="text" id="spell_name" name="spell_name" placeholder="Spell Name"><br>
+
+  <label for="spell_type"></label>
+  <input type="text" id="spell_type" name="spell_type" placeholder="Spell Type"><br>
+
+ <label for="spell_affect"></label>
+  <input type="text" id="spell_affect" name="spell_affect" placeholder="Spell Affect"><br>
+
+  <button type="submit" class="btn">Submit Spell</button>
+</form> 
+</section>
+
+<h1>List of Spells</h1>
 
 {{#each spells}}
   
@@ -15,3 +31,5 @@
   </ul>
 
 {{/each}}
+
+<script src="/javascript/add-spells.js"></script>
