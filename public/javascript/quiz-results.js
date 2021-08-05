@@ -196,7 +196,27 @@ function tallyResults(){
         tally.push(4)
     }
 
-    console.log(tally)
+    let gry = 0
+    let huf = 0
+    let rav = 0
+    let sly = 0
+
+    for(i = 0; i < tally.length; i++){
+        if (tally[i] === 1){
+            gry = gry + 1
+        }
+        else if (tally[i] === 2){
+            huf = huf + 1
+        }
+        else if (tally[i] === 3){
+            rav = rav + 1
+        }
+        else if (tally[i] === 4){
+            sly = sly + 1
+        }
+    }
+
+    
 } 
 
 document.getElementById('results').addEventListener('click', tallyResults)
