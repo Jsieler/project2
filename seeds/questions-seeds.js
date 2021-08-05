@@ -131,6 +131,9 @@ const questionsData = [
 
 ];
 
+
+
+
 const seedQuestions = () => Questions.bulkCreate(questionsData);
 
 module.exports = seedQuestions;
