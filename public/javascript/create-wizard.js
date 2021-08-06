@@ -1,3 +1,4 @@
+
 async function newFormHandler(event) {
     event.preventDefault();
   
@@ -24,6 +25,5 @@ async function newFormHandler(event) {
     }
   }
   
-  document.querySelector('.create-wizard').addEventListener('submit', newFormHandler);
 
-  
+  document.querySelector('.create-wizard').addEventListener('submit', newFormHandler);

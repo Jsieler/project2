@@ -7,6 +7,119 @@
   <title>Document</title>
   <style>
 
+    
+ body {
+  font-family: 'Comfortaa', sans-serif;
+	background: #111;
+	color: #FFFFFF;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.btn {
+font-family: 'Harry Potter', sans-serif;
+color: black;
+background-color: whitesmoke;
+font-size: 1.3em;
+border-radius: 30px;
+margin-left: 1.8em;
+}
+
+h1 {
+  font-size: 60px;
+	font-family:  'Harry Potter', sans-serif;
+	margin: 2em 0 .2em;
+  padding-bottom: 1em;
+  
+}
+
+h2{
+font-family:  'Harry Potter', sans-serif;
+font-size: 2em;	
+
+}
+h3 {
+  font-size: 20px;
+	font-family:  'Cinzel';
+	
+}
+
+main {
+	margin: 4em auto 8em;
+	max-width: 600px;
+  justify-content: space-between;
+
+	
+}
+
+h2,h3,h4 {}
+.spell-card {
+background: #4ECDC4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ 
+	padding: 10px;
+	margin: 2em;
+	border-radius: 20px;
+	box-shadow: 0 0 0 14px #f6f9fb;
+	text-align: center;
+}
+iframe {
+  border-radius: 15px;
+  max-width: 900px;
+}
+input, textarea {
+	margin-left: 8em;
+  color: #fff;
+  width: 50%;
+  border-color: #282828;
+  border-radius: 15px;
+  outline:none;
+
+}
+</style>
+</head>
+<body>
+	<section>
+  <h2>Create A Spell</h2>
+<form class="create-spell">
+
+  <label for="spell_name"></label>
+  <input type="text" id="spell_name" name="spell_name" placeholder="Spell Name"><br>
+
+  <label for="spell_type"></label>
+  <input type="text" id="spell_type" name="spell_type" placeholder="Spell Type"><br>
+
+ <label for="spell_affect"></label>
+  <input type="text" id="spell_affect" name="spell_affect" placeholder="Spell Affect"><br>
+
+  <button type="submit" class="btn">Submit Spell</button>
+</form> 
+</section>
+
+  <h1>Harry Potter Spells</h1>
+  <iframe src="https://giphy.com/embed/xT5LMxGzbgJkUZjdte" width="480" height="208" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-magic-spells-xT5LMxGzbgJkUZjdte"></a></p>
+  {{#each spells}}
+<main>
+	<div class="spell-card">
+		<div class="spell-card__inner">
+			<div class="spell-card__shape">
+			</div>
+			<div class="spell-card__name">
+				<h2>{{spell_name}}:</h2>
+				<h3>Type of Spell:</h3>{{spell_type}}
+        <h3>Spell Affect:</h3>{{spell_affect}}
+			</div>
+		</div>
+	</div>
+{{/each}}
+<script src="/javascript/add-spells.js"></script>
+</body>
+</html>
+
+
+
  body {
   font-family: 'Comfortaa', sans-serif;
     background: #111;
@@ -89,3 +202,4 @@ iframe {
 {{/each}}
 
 <script src="/javascript/add-spells.js"></script>
+
