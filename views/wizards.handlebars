@@ -6,18 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    
+
+
  body {
   font-family: 'Comfortaa', sans-serif;
-	background: #111;
-	color: #FFFFFF;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-	text-align: center;
+    background: #111;
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-align: center;
+
 }
 
 
 h1 {
   font-size: 60px;
+
 	font-family:  'Harry Potter', sans-serif;
 	margin: 2em 0 .2em;
 }
@@ -75,6 +78,46 @@ border-radius: 30px;
 </head>
 <body>
   <section>
+
+    font-family:  'Harry Potter', sans-serif;
+    margin: 2em 0 .2em;
+
+
+}
+
+h3 {
+  font-size: 20px;
+    font-family:  'Cinzel';
+}
+
+main {
+    margin: 4em auto 8em;
+    max-width: 600px;
+  justify-content: space-between;
+
+
+}
+
+input, textarea {
+  color: #fff;
+}
+
+.spell-card {
+    background:#111e27 ;
+    padding: 20px;
+    margin: 2em;
+    border-radius: 20px;
+    box-shadow: 0 0 0 14px #f6f9fb;
+    text-align: center;
+}
+iframe, p{
+  border-radius: 30px;
+  max-width: 900px;
+}
+</style>
+</head>
+<section>
+
   <h2>Create A Wizard or Witch</h2>
 <form class="create-wizard">
 
@@ -85,12 +128,14 @@ border-radius: 30px;
   <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br>
 
    <label for="houses_id"></label>
-  <input type="text" id="houses_id" name="houses_id" placeholder="1=Gryffindor, 2=Hufflepuff, 3=Ravenclaw, 4=Slytherin"><br>
+
+  <input type="text" id="houses_id" name="houses_id" placeholder="House ID TYPE:(1=Gryffindor, 2=Hufflepuff, 3=Ravenclaw, 4=Slytherin)"><br>
 
 
   <button type="submit" class="btn">Create Wizard/Witch</button>
 </form> 
 </section>
+
 
   <h1>Wizards and Witches<h1></h1>
   <iframe src="https://giphy.com/embed/rvMQcARjST01W" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-hogwarts-deathly-hallows-rvMQcARjST01W"></a></p>
@@ -116,7 +161,41 @@ border-radius: 30px;
 
 
 
+<h1>Wizards and Witches<h1>
+
+{{#each Wizards}}
+  
+  <h3>{{Wizards}}</h3>
+  <ul>
+      <li>
+          {{first_name}}
+          {{last_name}}
+      </li>
+      House:
+     {{house.house_name}}
+  </ul>
+
+{{/each}}
+
+<script src="/javascript/create-wizard.js"></script>
+
+
+
+
+
 
 
  
+
+
+
+  <h3>{{Wizards}}</h3>
+  <ul>
+      <li>
+          {{first_name}}
+          {{last_name}}
+      </li>
+      House:
+     {{house.house_name}}
+  </ul>
 

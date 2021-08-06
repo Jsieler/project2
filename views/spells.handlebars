@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+
     
  body {
   font-family: 'Comfortaa', sans-serif;
@@ -116,4 +117,89 @@ input, textarea {
 <script src="/javascript/add-spells.js"></script>
 </body>
 </html>
+
+
+
+ body {
+  font-family: 'Comfortaa', sans-serif;
+    background: #111;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+input, textarea {
+  color: #fff;
+}
+
+h1 {
+  font-size: 60px;
+    font-family:  'Harry Potter', sans-serif;
+    margin: 2em 0 .2em;
+  padding-bottom: 1em;
+
+}
+
+h3 {
+  font-size: 20px;
+    font-family:  'Cinzel';
+}
+
+main {
+    margin: 4em auto 8em;
+    max-width: 600px;
+  justify-content: space-between;
+
+
+}
+
+.spell-card {
+    background:#111e27 ;
+    padding: 10px;
+    margin: 2em;
+    border-radius: 20px;
+    box-shadow: 0 0 0 14px #f6f9fb;
+    text-align: center;
+}
+iframe {
+  border-radius: 15px;
+  max-width: 900px;
+}
+</style>
+</head>
+
+<section>
+  <h2>Create A Spell</h2>
+<form class="create-spell">
+
+  <label for="spell_name"></label>
+  <input type="text" id="spell_name" name="spell_name" placeholder="Spell Name"><br>
+
+  <label for="spell_type"></label>
+  <input type="text" id="spell_type" name="spell_type" placeholder="Spell Type"><br>
+
+ <label for="spell_affect"></label>
+  <input type="text" id="spell_affect" name="spell_affect" placeholder="Spell Affect"><br>
+
+  <button type="submit" class="btn">Submit Spell</button>
+</form> 
+</section>
+
+<h1>List of Spells</h1>
+
+{{#each spells}}
+  
+  <h3>{{spells}}</h3>
+  <ul>
+      <li>
+          <h1>{{spell_name}}:</h1>
+          <h3>Type of Spell:</h3>{{spell_type}}
+          <h3>Spell Affect:</h3>{{spell_affect}},
+      </li>
+     
+  </ul>
+
+{{/each}}
+
+<script src="/javascript/add-spells.js"></script>
 
