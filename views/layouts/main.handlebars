@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hogwarts</title>
+
   <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">  
   
@@ -37,9 +38,9 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <nav>
-        <ul>
+    <header class="hide blob">
+      
+
         {{#if loggedIn}}
         <button class = "btnDass"onclick="window.location.href='/dashboard'">Dashboard</button>
         <button class ="btnDass" onclick="window.location.href='/api/quiz'">Quiz</button>
