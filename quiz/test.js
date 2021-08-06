@@ -61,10 +61,19 @@ function blue(i, x, y, z) {
     console.log("not ravenclaw!");
 }};
 
-// function blue(i, x, y, z) {
-//     if ( z > x, z > y, z > i) {
-//     console.log("slytherin");
-//     window.location=link4
-// } else {
-//     console.log("not slytherin!");
-// }};
+
+function randomHouse() {
+    var myrandom=Math.round(Math.random() * 3)
+    var link1="gryffindor.html"
+    var link2="ravenclaw.html"
+    var link3="hufflepuff.html"
+    var link4="slytherin.html"
+    if (myrandom == 0)
+    window.location=link1
+    else if (myrandom == 1)
+    window.location=link2
+    else if (myrandom == 2)
+    window.location=link3
+    else if (myrandom == 4)
+    window.location=link4
+}
