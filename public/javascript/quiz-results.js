@@ -217,7 +217,7 @@ function tallyResults(){
     }
 
     if ((gry >= huf) && (gry >= rav) && (gry >= sly)){
-        window.location = "gryffindor.html"
+        window.location.pathname = "../quiz/gryffindor.html"
     }
     else if((huf >= gry) && (huf >= rav) && (huf >= sly)){
         window.location = "hufflepuff.html"
