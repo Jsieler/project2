@@ -20,10 +20,12 @@ h1 {
   font-size: 60px;
 	font-family:  'Harry Potter', sans-serif;
 	margin: 2em 0 .2em;
-  
-  
 }
 
+h2 {
+  font-family: 'Harry Potter', sans-serif;
+  font-size: 2em;
+}
 h3 {
   font-size: 20px;
 	font-family:  'Cinzel';
@@ -38,22 +40,60 @@ main {
 }
 
 .spell-card {
-	background:#111e27 ;
-	padding: 20px;
-	margin: 2em;
+	background: #e65c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding: 2em;
+  margin: 4em;
 	border-radius: 20px;
 	box-shadow: 0 0 0 14px #f6f9fb;
 	text-align: center;
 }
-iframe, p{
-  border-radius: 30px;
+
+ul, li {
+  text-decoration: none;
+}
+iframe {
+  border-radius: 15px;
   max-width: 900px;
+}
+input, textarea {
+  color: #fff;
+  border-color: #282828;
+  border-radius: 15px;
+  outline:none;
+}
+.btn {
+font-family: 'Harry Potter', sans-serif;
+color: black;
+background-color: whitesmoke;
+font-size: 1.3em;
+border-radius: 30px;
 }
 </style>
 </head>
 <body>
+  <section>
+  <h2>Create A Wizard or Witch</h2>
+<form class="create-wizard">
+
+  <label for="first_name"></label>
+  <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
+
+  <label for="last_name"></label>
+  <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br>
+
+   <label for="houses_id"></label>
+  <input type="text" id="houses_id" name="houses_id" placeholder="1=Gryffindor, 2=Hufflepuff, 3=Ravenclaw, 4=Slytherin"><br>
+
+
+  <button type="submit" class="btn">Create Wizard/Witch</button>
+</form> 
+</section>
+
   <h1>Wizards and Witches<h1></h1>
-  <iframe src="https://giphy.com/embed/rvMQcARjST01W" width="580" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-hogwarts-deathly-hallows-rvMQcARjST01W"></a></p>
+  <iframe src="https://giphy.com/embed/rvMQcARjST01W" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-hogwarts-deathly-hallows-rvMQcARjST01W"></a></p>
   {{#each Wizards}}
 <main>
 	<div class="spell-card">
@@ -62,18 +102,14 @@ iframe, p{
 			</div>
 			<div class="spell-card__name">
 				<h3>{{Wizards}}</h3>
-  <ul>
-      <li>
-          {{first_name}}
-          {{last_name}}
-      </li>
-      House:
-     {{house.house_name}}
-  </ul>
+       <h2>{{first_name}} {{last_name}}</h2> 
+          <h3>House:  {{house.house_name}}</h3>
 			</div>
 		</div>
 	</div>
 {{/each}}
+
+<script src="/javascript/create-wizard.js"></script>
 </body>
 </html>
 
@@ -82,14 +118,5 @@ iframe, p{
 
 
 
-  
-  <h3>{{Wizards}}</h3>
-  <ul>
-      <li>
-          {{first_name}}
-          {{last_name}}
-      </li>
-      House:
-     {{house.house_name}}
-  </ul>
+ 
 
