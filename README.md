@@ -4,7 +4,10 @@
  
 ## Description
 * We wanted to make a quiz to match the user’s personality to the corresponding wizard house.
-![50A89D8B-1133-4D6D-AED2-01BCFF0173DC_1_105_c](https://user-images.githubusercontent.com/80868375/128612483-1f7b71e1-f6d8-41ea-954e-550d83dc197c.jpeg)
+![A7430264-E46F-4434-8481-C270B4B1CFDD_1_105_c](https://user-images.githubusercontent.com/80868375/128612512-57ce7ade-9315-4073-ac62-baba86872c89.jpeg)
+![D36448D5-6085-44A6-8B91-3ADB1CC94E42_1_105_c](https://user-images.githubusercontent.com/80868375/128612599-4bd0d498-ba5d-4529-b263-7fd6d48d7e5f.jpeg)
+![2DCFAC64-584B-42BE-9DA7-B6492BEBB562_1_105_c](https://user-images.githubusercontent.com/80868375/128612600-e56e43ba-8158-46f5-8e73-61c171c212ab.jpeg)
+
 
 
 
@@ -33,4 +36,6 @@
 * Make more quizzes
 * Make the spells have animation
 * Make more quizzes (patronus quiz)
+
+![5842C901-7E81-4FF0-B7BC-D3B6994B5FF9](https://user-images.githubusercontent.com/80868375/128612644-846e084f-e938-4a78-8a64-814ac0528655.jpeg)
 
