@@ -21,9 +21,9 @@ Wizards.belongsTo(Houses, {
   onDelete: 'SET NULL'
 });
 
-Houses.hasMany(Wizards, {
-  foreignKey: 'houses_id',
-  onDelete: 'SET NULL'
-})
+// Houses.hasMany(Wizards, {
+//   foreignKey: 'houses_id',
+//   onDelete: 'SET NULL'
+// })
 
 module.exports = { User, Quiz, Questions, Houses, Wizards, Spells};
