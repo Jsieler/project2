@@ -74,6 +74,6 @@ function randomHouse() {
     window.location=link2
     else if (myrandom == 2)
     window.location=link3
-    else if (myrandom == 4)
+    else if (myrandom == 3)
     window.location=link4
 }
