@@ -20,7 +20,7 @@
 * Bcrypt package to hash passwords.
 * Connect-session-sequelize package to add authentication.
 
-# This was a group collaborative project
+## This was a group collaborative project
 * Contributors include:
 * Josh Sieler - https://github.com/Jsieler
 * Kylee Bijerring - https://github.com/kybij
