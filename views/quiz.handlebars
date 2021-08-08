@@ -247,13 +247,10 @@
         <input type="radio" name="fifteen" value="4" onclick="increment4();"/>
         <br>
     </form>
-<button id="results" onclick="randomHouse();">See results</button>
+<button id="results" onclick="tallyResults();">See results</button>
 </body>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+{{!-- <script type="text/javascript" src="js/materialize.min.js"></script> --}}
 <script>
-    const gryffindor = {
-    
-}
 
 var i = 0;
 var x = 0;
@@ -284,52 +281,30 @@ function increment4() {
     console.log(z);
 }
 
-var link1="slytherin"
+var link1="gryffindor"
 var link2="ravenclaw"
 var link3="hufflepuff"
-var link4="gryffindor"
+var link4="slytherin"
 
+function tallyResults() {
+    if ((i >= x) && (i >= y) && (i >= z)) {
+    window.location = link1
+    }
+    else if ((x >= i) && (x >= y) && (x >= z)){
+    window.location = link2
+    }
+    else if ((y >= i) && (y >= x) && (y >= z)){
+    window.location = link3
+    }
+    else if ((z >= i) && (z >= x) && (z >= y)){
+    window.location = link2
+    }
+    else {
+        let random = Math.floor(Math.random() * max)
+        window.location = random
+    }
+};
 
-function blue(i, x, y, z) {
-    if ( i > x, i > y, i > z) {
-    console.log("gryffindor!");
-    window.location=link4
-} else {
-    console.log("not gryffindor!");
-}};
-
-function blue(i, x, y, z) {
-    if ( x > i, x > y, x > z) {
-    console.log("hufflepuff!");
-    window.location=link3
-} else {
-    console.log("not hufflepuff!");
-}};
-
-function blue(i, x, y, z) {
-    if ( y > x, y > i, y > z) {
-    console.log("ravenclaw!");
-    window.location=link2
-} else {
-    console.log("not ravenclaw!");
-}};
-
-
-function randomHouse() {
-    var myrandom=Math.round(Math.random() * 3)
-    var link1="gryffindor"
-    var link2="ravenclaw"
-    var link3="hufflepuff"
-    var link4="slytherin"
-    if (myrandom == 0)
-    window.location=link1
-    else if (myrandom == 1)
-    window.location=link2
-    else if (myrandom == 2)
-    window.location=link3
-    else if (myrandom == 4)
-    window.location=link4
-}
 </script>
 {{!-- <script src="/quiz/test.js"></script> --}}
 </html>
