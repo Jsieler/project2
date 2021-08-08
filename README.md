@@ -1,5 +1,5 @@
 # Hogwarts Library
-*Welcome to Hogwarts library where you can view Witches and Wizards, view Spells and even create your own Spells and Wizards! If you want to  become a Witch or Wizard you can take a quiz to figure out what house best fits you, or let destiny decide your fate.
+* Welcome to Hogwarts library where you can view Witches and Wizards, view Spells and even create your own Spells and Wizards! If you want to  become a Witch or Wizard you can take a quiz to figure out what house best fits you, or let destiny decide your fate.
 
  
 ## Description
