@@ -14,7 +14,7 @@
     }
   
   .hero-image {
-    background-image: linear-gradient(rgba(167, 74, 74, 0.3), rgba(0, 0, 0, 0.3)), url("images/grfin.jpg");
+    background-image: linear-gradient(rgba(167, 74, 74, 0.3), rgba(0, 0, 0, 0.3)), url("/images/grfin.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
   }
   body {
     /* background: url("images/grfnwee.jpg") */
-    background: url("images/brick.jpg");
+    background-image: url("/images/brick.jpg");
   }
   .container {
     display: flex;
@@ -135,9 +135,9 @@
     <script>
         function randomHouse() {
             var myrandom=Math.round(Math.random() * 2)
-            var link1="slytherin.html"
-            var link2="ravenclaw.html"
-            var link3="hufflepuff.html"
+            var link1="slytherin"
+            var link2="ravenclaw"
+            var link3="hufflepuff"
             if (myrandom == 0)
             window.location=link1
             else if (myrandom == 1)
