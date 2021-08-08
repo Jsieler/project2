@@ -19,6 +19,7 @@
 * Express-session package to store user session data in a cookie.
 * Bcrypt package to hash passwords.
 * Connect-session-sequelize package to add authentication.
+* Micron.js helped animate the dashboard buttons.
 
 ## This was a group collaborative project
 * Contributors include:
