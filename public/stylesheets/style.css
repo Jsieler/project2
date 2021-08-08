@@ -91,7 +91,7 @@ label.active {
   font-size:14px;
 }
 
-input, textarea {
+textarea {
   font-size:22px;
   display:block;
   width:100%;
