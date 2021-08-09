@@ -24,28 +24,68 @@
             background: #263238;
             margin: 1em;
         }
-
+        .btnDass {
+            padding-top: 10px;
+        }
         h1 {
             font-family: 'Harry Potter', sans-serif;
             text-align: center;
             padding-top: 1em;
+            padding-bottom: 1em;
+            font-size: 4.2em;
+            text-shadow: 2px 2px 5px black;
         }
 
-        .btnDass {
-            background-color: #222;
-            color: #fff;
-            font-family: 'Harry Potter', sans-serif;
-            font-size: 40px;
-            border-radius: 30px;
-            padding: 15px 25px 10px 30px;
-            margin-left: 3em;
+        h3 {
+            font-size: 1.8em;
+            text-align: center;
+            padding-top: 1.5em;
+            text-shadow: 2px 2px 2px black;
+            font-family: italic;
         }
 
         .radio {
             position: relative !important;
             opacity: 100 !important;
             pointer-events: all !important;
-        }        
+        }
+
+        #choices1,
+        #choices2,
+        #choices3,
+        #choices4,
+        #choices5,
+        #choices6,
+        #choices7,
+        #choices8,
+        #choices9,
+        #choices10,
+        #choices11,
+        #choices12,
+        #choices13,
+        #choices14,
+        #choices15 {
+            margin-left: 44em;
+
+        }
+
+        label {
+            font-size: 1em;
+            margin-left: 45em;
+            color: #cfd8dc;
+        }
+
+        #results {
+            margin-left: 34em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-family: 'Harry Potter', sans-serif;
+            color: black;
+            background-color: whitesmoke;
+            font-size: 1.3em;
+            border-radius: 30px;
+            padding:15px 8px 8px 8px;
+        }
     </style>
 </head>
 
@@ -89,7 +129,14 @@
     </form>
     <h3 class="question" id="question3">Which path do you intend to follow after leaving Hogwarts?</h3>
     <form id="choices3">
-        <label for="que1cho2">I think I'd travel for a while before committing to a carrer.</label>
+
+        <label for="que1cho1">I'd settle down and start a family as soon as possible!</label>
+        <input class="radio" type="radio" name="three" value="1" onclick="increment1();" />
+        <br>
+        <label for="que1cho2">I think I'd travel for a while before committing to a career.</label>
+
+       
+
         <input class="radio" type="radio" name="three" value="2" onclick="increment2();" />
         <br>
         <label for="que1cho3">I'd join the Ministry - I want to make a difference in the world</label>
@@ -107,24 +154,31 @@
         <label for="que1cho1">Myself, surrounded by loving family and friends</label>
         <input class="radio" type="radio" name="four" value="1" onclick="increment1();" />
         <br>
-        <label for="que1cho3">Myself, knowledgable above all</label>
+        <label for="que1cho3">Myself, knowledgeable above all</label>
         <input class="radio" type="radio" name="four" value="3" onclick="increment3();" />
         <br>
         <label for="que1cho4">Myself, surrounded by riches</label>
         <input class="radio" type="radio" name="four" value="4" onclick="increment4();" />
         <br>
-        <label for="que1cho2">Myself, experiencing a marvellous adventure</label>
+        <label for="que1cho2">Myself, experiencing a marvelous adventure</label>
         <input class="radio" type="radio" name="four" value="2" onclick="increment2();" />
         <br>
     </form>
-    <h3 class="question" id="question5">It's Saturday, you've finished your homework, and you have some free time. You
-        decide to spend some time away from you common room. Where do you go?</h3>
+    <h3 class="question" id="question5">You've finished your homework and you have some free time. You
+        decide to spend some time away from the common room. Where do you go?</h3>
     <form id="choices5">
-        <label for="que1cho2">The kitchens</label>
-        <input class="radio" type="radio" name="five" value="2" onclick="increment2();" />
-        <br>
+
         <label for="que1cho1">The Room of Requirements</label>
         <input class="radio" type="radio" name="five" value="1" onclick="increment1();" />
+        <br>
+        <label for="que1cho2">The Kitchen</label>
+        <input class="radio" type="radio" name="five" value="2" onclick="increment2();" />
+        <br>
+        <label for="que1cho3">The Library</label>
+        <input class="radio" type="radio" name="five" value="3" onclick="increment3();" />
+
+      
+
         <br>
         <label for="que1cho4">The Forbidden Forest</label>
         <input class="radio" type="radio" name="five" value="4" onclick="increment4();" />
@@ -152,7 +206,7 @@
     <h3 class="question" id="question7">The first Quidditch match of the season is approaching, and you can't wait to
         get involved. What role are you playing?</h3>
     <form id="choices7">
-        <label for="que1cho1">Seeker. Iwant the glory!</label>
+        <label for="que1cho1">Seeker. I want the glory!</label>
         <input class="radio" type="radio" name="seven" value="1" onclick="increment1();" />
         <br>
         <label for="que1cho4">Beater. I like having all that power</label>
@@ -287,12 +341,12 @@
         <br>
     </form>
 
-<button id="results" onclick="tallyResults();">See results</button>
+    <button id="results" onclick="tallyResults();">See results</button>
 
-    
+
 
 </body>
-{{!-- <script type="text/javascript" src="js/materialize.min.js"></script> --}}
+
 <script>
 
 
@@ -325,32 +379,33 @@
         console.log(z);
     }
 
-var link1="gryffindor"
-var link2="ravenclaw"
-var link3="hufflepuff"
-var link4="slytherin"
+    var link1 = "gryffindor"
+    var link2 = "ravenclaw"
+    var link3 = "hufflepuff"
+    var link4 = "slytherin"
 
-function tallyResults() {
-    if ((i >= x) && (i >= y) && (i >= z)) {
-    window.location = link1
-    }
-    else if ((x >= i) && (x >= y) && (x >= z)){
-    window.location = link2
-    }
-    else if ((y >= i) && (y >= x) && (y >= z)){
-    window.location = link3
-    }
-    else if ((z >= i) && (z >= x) && (z >= y)){
-    window.location = link2
-    }
-    else {
-        let random = Math.floor(Math.random() * max)
-        window.location = random
-    }
-};
+    function tallyResults() {
+        if ((i >= x) && (i >= y) && (i >= z)) {
+            window.location = link1
+        }
+        else if ((x >= i) && (x >= y) && (x >= z)) {
+            window.location = link2
+        }
+        else if ((y >= i) && (y >= x) && (y >= z)) {
+            window.location = link3
+        }
+        else if ((z >= i) && (z >= x) && (z >= y)) {
+            window.location = link2
+        }
+        else {
+            let random = Math.floor(Math.random() * max)
+            window.location = random
+        }
+    };
 
 
 </script>
+
 {{!--
 <script src="/quiz/test.js"></script> --}}
 
