@@ -10,7 +10,6 @@
 
 
 
-
 ## Technologies Used
 * Javascript,CSS,HTML
 * Express-handlebars package to use Handlebars.js for views.
