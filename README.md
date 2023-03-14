@@ -28,7 +28,7 @@
 * Robert Stoddard - https://github.com/drad9428
 
 ## Installation 
-* No installation necessary just click the <a href="https://pacific-scrubland-02824.herokuapp.com/">Hogwarts Library</a> link to use!
+* No installation necessary just click the <a href="https://wizard-sorting-quiz.herokuapp.com/">Hogwarts Library</a> link to use!
 
 ## Future Development 
 * More tables of information in database
